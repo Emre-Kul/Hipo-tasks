@@ -1,0 +1,49 @@
+/*
+  Tab container.Designed with flex system.
+*/
+.tab{
+  display:  flex;
+  flex-wrap: wrap;
+  border-style: groove;
+  width: 80%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+  i used fixed lengths(w:100px,h:50px) it could be problem for responsive design.
+*/
+.title{
+  border-style: solid;
+  border-width: thin;
+  border-color: #d9d9d9;
+  cursor:pointer;
+  width: 100px;
+  height: 50px;
+  margin: 2px 2px 0 2px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+.title:hover{
+  background-color: #f2f2f2;
+}
+.title[picked]{
+  background-color: #d9d9d9;
+}
+.content[picked]{
+  display:block;
+}
+.content{
+  display: none;
+  background-color: #b3daff;
+  width: 100%;
+  height: calc(100% - 65px);
+  margin: 1px;
+  padding:5px;
+  animation: fadein 1s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

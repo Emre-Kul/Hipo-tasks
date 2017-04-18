@@ -1,0 +1,27 @@
+Priorty order for browsers : id > class > elements
+Example : #id1 > .class1 > div
+
+For this question we can write : 
+	a) .class3 = 1 class
+	b) .class1 .class2 .class3 = 3 class 
+	c) .class1 #id2 #id3 = 2 id 1 class
+	d) #id1 .class2 .class3 = 1 id 2 class 
+	e) #id3 = 1 id
+Priorty orders of those selectors : c > d > e > b > a
+	This means if there is same attributes inside multiple selector browser pick the selector in above order.
+
+Problem : Let's say all the elements with “class3” with parent “class2” has border-radius of 5px
+& color of blue except that the element with “id3”, which has border-radius of 10px and
+color of red.
+
+Solution : 
+
+.class2 .class3{
+	border-radius: 5px;
+	background-color: blue;
+}
+#id3{
+	border-radius: 10px;
+	background-color: red;
+}
+

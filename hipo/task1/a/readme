@@ -1,0 +1,2 @@
+I used flex system but it can be done with float:left property too. 
+width: calc(33.333% - 10px); 10px for margin.This can done with a better way.

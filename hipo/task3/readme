@@ -1,0 +1,22 @@
+Example html syntax :
+  <div class="title" data-bind="tab1" >Tab1</div>
+  <div id="tab1" class="content">C1</div>
+
+Solution : 
+	I used javascript and css for this task.My solution is smilar to bootstrap tab system.
+	After page loaded i create click listeners for tabbuttons with class name of 'title'.
+	It can be done with onclick method but i try to use as little space as possible in html content.
+	Selector(class='title') can be different like 'purpose-of-use="tab"' and it is better but i try to make it simple for this task.
+	After click event fires ,function look inside the 'data-bind' attribute(id of content) and use this data(id) to find content.
+	When click event fires,function delete 'picked' attribute from all contents and titles.
+	And pick(add picked attribute) clicked tab(show content and highlight title in css).
+
+Why i choose this solution :
+	I choose this solution because it's easy to implement in html page and css independent(some changes must be made).
+	But there is a downside that we can't create multiple tab system using this code.
+	I can solve this problem making some changes like adding attribute(for example name) and using this attribute from javascript code for specify different tabs.
+
+****Note : 
+(function(){})() or window.onlad ' doesn't work for this problem because when these functions fire content of page is empty and  document.querySelectorAll('.title') can't catch the tabbuttons. 
+
+I get help from 'http://stackoverflow.com/questions/799981/document-ready-equivalent-without-jquery' for this problem.

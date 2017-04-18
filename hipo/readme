@@ -1,0 +1,14 @@
+I use 'Mozilla Firefox 52.0.2 for Ubuntu(Linux)' for testing.
+
+References:
+1-a,1-b:
+	https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-grid.css
+	https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+1-c : 
+	https://css-tricks.com/specifics-on-css-specificity/
+2-a:
+	https://developer.mozilla.org/en/docs/Web/JavaScript/Closures
+2-b,2-c,2-d,3:
+	I solve these questions with help of my old experiences.
+3)
+	http://stackoverflow.com/questions/799981/document-ready-equivalent-without-jquery
